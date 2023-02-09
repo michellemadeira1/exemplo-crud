@@ -21,7 +21,7 @@ public class ProdutoRepository {
 	
 	public Optional<Produto> obterPorId(Integer id) {
 		return produtos
-				.stream().filter(null)                         //(produto ->  produto.getId() = id);
+				.stream()        
 				.findFirst();
 	}
 	
@@ -33,7 +33,7 @@ public class ProdutoRepository {
 	}
 	
 	public void deletar(Integer id) {
-		produtos.removeIf(null);                             //(produto ->  produto.getId() = id);
+		produtos.remove(id);                             
 	}
 	
 	public Produto atualizar(Produto produto) {

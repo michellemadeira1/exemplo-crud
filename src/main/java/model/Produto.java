@@ -7,7 +7,7 @@ public class Produto {
 	private Integer quantidade;
 	private Double valor;
 	private String observacao;
-	
+	private String produto;
 	
 	
 	
@@ -40,6 +40,12 @@ public class Produto {
 	}
 	public void setObservacao(String observacao) {
 		this.observacao = observacao;
+	}
+	public String getProduto() {
+		return produto;
+	}
+	public void setProduto(String produto) {
+		this.produto = produto;
 	}
 	
 	
