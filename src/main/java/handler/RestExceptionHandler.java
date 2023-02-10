@@ -10,7 +10,7 @@ import exception.ResourceNotFoundException;
 
 @ControllerAdvice
 public class RestExceptionHandler {
-
+ 
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<?> handleResourceNotFoundException(ResourceNotFoundException ex){
 		
