@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import exception.ResourceNotFoundException;
 import model.Produto;
+import shared.ProdutoDTO;
 
 @Repository
 public class ProdutoRepositoryOld {
@@ -47,4 +48,16 @@ public class ProdutoRepositoryOld {
 		return produto;
 
 	}
+
+	public List<Produto> findAll() {
+		return produtos;
+	}
+
+	public Produto save(Produto produto) {
+		// TODO Auto-generated method stub
+		return produto;
+	}
+
+	
+
 }
